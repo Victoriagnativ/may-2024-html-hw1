@@ -30,17 +30,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 .flex{
     display: flex;
     gap: 52px;
 }
-img{
+picture img{
     width: 581.019px;
-    height: 652.972px;
-
-
+    height: auto;
 }
 .info{
     display: flex;
