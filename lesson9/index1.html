@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #0a8185;
+
+        }
+        form{
+            width: 500px;
+            height: 350px;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+
+        }
+        .flex{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        label{
+            display: block;
+        }
+        .field{
+            display: block;
+            width: 300px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid gray;
+        }
+        .title{
+            height: 15vh;
+            width: 100%;
+            background-color: rgba(120, 204, 204, 0.6);
+            text-align: center;
+            padding-top: 10px;
+
+
+        }
+        .title h2{
+            margin-top: 20px;
+        }
+        .button{
+            display: flex;
+            margin-top: 30px;
+        }
+        button{
+            margin-left: 90px;
+            padding: 5px 30px;
+            border-radius: 5px;
+            border: 1px solid gray;
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="flex">
+<form>
+    <div class="title">
+    <h2>Вхід в особистий кабінет</h2>
+    </div>
+<!--    <label >Вхід в особистий кабінет</label>-->
+    <input class="field" type="email" name="email" placeholder="Логін або email" required>
+    <input class="field" type="password" name="password" placeholder=" Пароль" required>
+    <div class="button">
+    <label >
+        Запам'ятати мене <input type="checkbox" name="remember">
+    </label>
+        <button>Вхід</button>
+    </div>
+
+</form>
+</div>
+</body>
+</html>
