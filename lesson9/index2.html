@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main,footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex{
+            width:30vw ;
+            height: 75vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid #dfd8d8;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .flex-two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:30vw ;
+            height: 15vh;
+            border: 2px solid #dfd8d8;
+            margin-top: 15px;
+
+        }
+        .flex input{
+            width: 300px;
+            height: 35px;
+            background-color: #edf0f6;
+            border-radius: 5px;
+            border: 1px solid darkgrey ;
+            padding-left: 10px;
+            color: black;
+
+        }
+        a{
+            display: inline;
+            text-decoration: none;
+        }
+        .flex span a{
+            padding-right: 10px;
+        }
+        button{
+            width: 300px;
+            height: 30px;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            border: 1px solid dodgerblue ;
+        }
+        .blue{
+            color: darkblue;
+        }
+
+        .flex h1{
+            padding: 30px 0;
+            font-family: "Dancing Script", cursive;
+            font-weight:700;
+            font-size: 55px;
+            font-weight: bold;
+
+        }
+        .font{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="flex">
+    <h1>Instagram</h1>
+    <input type="text" name="name" placeholder="Номер телефону, ім'я користувача або email" required>
+    <input type="text" name="password" placeholder="Пароль" required>
+    <button style="color: white; font-size: 15px; opacity: 0.8">Увійти</button>
+    <a href="#"  style="color: #6B6666; font-size: 15px; font-weight: bold; padding-bottom: 20px" >АБО</a>
+        <span class="blue"><a href=""><img src="img/facebook.svg" alt=""></a><a href="#" class=" blue font">Увійти через Facebook</a></span>
+        <a href="#"  class="blue">Забули пароль?</a>
+    </div>
+</main>
+<footer>
+    <div class="flex-two">
+    <p style="font-weight: bold;font-size: 18px">Немає облікового запису?</p><a href="#" class="blue font">Зареєструйтеся</a>
+    </div>
+</footer>
+
+</body>
+</html>
