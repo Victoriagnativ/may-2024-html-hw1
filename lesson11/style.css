@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style-type: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+header{
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+    gap: 31px;
+    height: 108px;
+    background: rgba(245, 245, 247, 0.60);
+    backdrop-filter: blur(10px);
+}
+header div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.down{
+    margin-bottom: -4px;
+}
+header div span{
+    color: #1D1D1F;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.12px;
+}
+.content{
+    background: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 53px;
+}
+.content img{
+    width: 761px;
+    height: 432px;
+    flex-shrink: 0;
+    margin: 78px 0 15px 0;
+    animation: section  2s ease-in-out 1;
+}
+.content h1{
+    color: #1D1D1F;
+    font-family: "Inter", sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px; /* 100% */
+    letter-spacing: -1.44px;
+    animation: item 2s ease-in-out 1;
+}
+.content p{
+    width: 975.81px;
+    height: 112px;
+    color: #86868B;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 21.563px;
+    font-weight: 600;
+    line-height: 28px; /* 129.855% */
+    letter-spacing: 0.216px;
+    margin-bottom: 70px;
+    animation: item 2s ease-in-out 1;
+}
+@keyframes section {
+    0%{
+        opacity: 0.8;
+     transform: scale(1.4);
+
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+@keyframes item {
+    0%{
+        opacity: 0.8;
+
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
