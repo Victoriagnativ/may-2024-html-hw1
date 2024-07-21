@@ -2,6 +2,9 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Title</title>
     <style>
         *{
@@ -11,25 +14,33 @@
         }
         body{
             background: #F7F6F4;
+            margin-top: 100px;
         }
         .header{
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #F7F6F4
+
+        }
+        .header-wrap{
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 186px;
-            margin: 36px auto 0 80px;
-            position: fixed;
-            top: 0;
-
+            margin: 0 300px 0 0;
         }
         .list{
             display: flex;
-            gap: 20px;
+            gap: 40px;
         }
         ul li a{
             text-decoration: none;
             color: #333;
-            font-family: Taviraj;
+            font-family: "Taviraj", serif;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -44,8 +55,17 @@
             display: none;
             flex-direction: column;
             position: absolute;
-            left: 10px;
+            left: 3px;
+            width: 160px;
+            height: 107px;
        }
+        .list-down   li a{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 25px;
+        }
         ul li:hover .list-down{
             display: block;
             background-color: rgba(255, 255, 255, 0.70);
@@ -77,19 +97,18 @@
        }
        .content h1{
            color: #333;
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 60px;
            font-weight: 400;
            line-height: 80px; /* 133.333% */
            letter-spacing: 1.2px;
-           width: 413px;
+           /*width: 413px;*/
        }
        .content p{
            color: #333;
-           font-family: Nunito;
+           font-family: "Nunito", sans-serif;
            font-size: 16px;
            font-weight: 400;
-           line-height: normal;
            letter-spacing: 0.48px;
            width: 529px;
            margin-bottom: 47px;
@@ -101,7 +120,7 @@
            background: #D84727;
            border: none;
            color: rgba(255, 255, 255, 1);
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 20px;
            font-weight: 400;
            letter-spacing: 0.4px;
@@ -109,11 +128,13 @@
        .w-1110{
            width: 1110px;
            margin: 0 auto 101px auto;
+           position: relative;
+           z-index: -1;
 
        }
        .w-1110 h2{
            color: #333;
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 36px;
            font-weight: 500;
            line-height: 40px; /* 111.111% */
@@ -162,7 +183,7 @@
        }
        .flex span{
            color: #777;
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 20px;
            font-weight: 400;
            line-height: 40px; /* 200% */
@@ -170,7 +191,7 @@
        }
        .flex h4{
            color: #333;
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 36px;
            font-weight: 400;
            line-height: 48px; /* 133.333% */
@@ -178,7 +199,7 @@
        }
        .last h2{
            color: #333;
-           font-family: Taviraj;
+           font-family: "Taviraj", serif;
            font-size: 36px;
            font-weight: 500;
            line-height: 40px; /* 111.111% */
@@ -196,6 +217,7 @@
 <body>
 <header>
     <div class="header">
+        <div class="header-wrap">
         <img src="img/image.png" alt="img">
         <ul class="list">
             <li><a href="">Watches</a></li>
@@ -209,6 +231,7 @@
             </li>
             <li><a href="">News</a></li>
         </ul>
+    </div>
     </div>
 
 </header>
@@ -230,16 +253,16 @@
         <img src="img/image3.png" alt="">
         <p>Singo Maple</p>
     </div>
-    <div class="card"><img src="img/image3.png" alt="">
-        <p>Singo Maple</p>
+    <div class="card"><img src="img/image10.png" alt="">
+        <p>Singo Ebony</p>
     </div>
     <div class="card">
-        <img src="img/image3.png" alt="">
-        <p>Singo Maple</p>
+        <img src="img/image11.png" alt="">
+        <p>Rakai Ebony</p>
     </div>
     <div class="card">
-        <img src="img/image3.png" alt="image3">
-        <p>Singo Maple</p>
+        <img src="img/image12.png" alt="image3">
+        <p>Way Kambas</p>
     </div>
     </div>
 </section>
