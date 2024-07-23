@@ -1,0 +1,19 @@
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+    .wrap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    iframe{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 48px;
+    }
+    .content ul li a{
+
+        margin-bottom:8px;
+    }
+}
