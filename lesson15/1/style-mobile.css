@@ -1,0 +1,23 @@
+@media screen and (min-width:320px) and (max-width: 767px){
+    .container{
+        margin: 32px  auto 0 auto;
+        gap: 18px;
+    }
+
+    .container h1{
+        font-size: 28px;
+
+    }
+    .container p{
+        width: 343px;
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .btn button{
+        width: 131px;
+    }
+    .btn{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

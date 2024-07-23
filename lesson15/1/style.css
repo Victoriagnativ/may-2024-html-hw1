@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://s3-alpha-sig.figma.com/img/bf6f/31fa/eb742d588636fc4b57d11e746d86bf37?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PaIgBxciKc2hm~gzNU5Zg5ci4l33fDr7kuuTSCBDQPr~PfF0O4qrMGNbr67n0iBT52Y-GsxZeFR-GotobE0Jme3P8g5WgFxDUl~rCD9WYX47aCPxZ8bolpsXn-UOKTqWSLvAVagvEDYwGJPvHZOtGUNIbwR6t8iCdSChu~dSxn1ttYfoJG1mnfuocrEKWgnzt4UA9436d04TTFxEk1yHeOzoT8u9r~3vVZF1ImgdT8y0Y2IgeuL0-ySekazxk41nYPAqAs3rAWVYR0EUmI3Gkhnth~21ssNTIP9CIfaBtv0e5VSG8cI~8-f0ePDXUfMaFczMLijM9D9DD-r6a3bmfw__");
+    background-size: cover; /* Покриває весь екран */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Відміняє повторення зображення */
+    height: 100vh; /* Висота body на всю висоту вікна браузера */
+    margin: 0; /* Видаляє стандартні відступи */
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    margin: 55px  auto 0 auto;
+    height: 461px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.container h1{
+    color:#FFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.container p{
+    width: 960px;
+    color:  #FFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+.btn button{
+    width: 191px;
+    height: 64px;
+    border-radius: 32px;
+    background:  #FFF;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+.img img{
+    margin: 0  10px -8px 0;
+}
+.img span{
+    color:#FFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
