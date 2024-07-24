@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .grid{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr repeat(6, 1fr) 2fr;
+        grid-template-areas:
+            'header header '
+            'top first'
+            'top first'
+            'center first'
+            'center right'
+            'bottom right'
+            'bottom right'
+            'footer footer' ;
+    }
+    header{
+        grid-area: header;
+        background: #8D8484;
+    }
+    .top{
+        grid-area: top;
+        background: #776969;
+    }
+    .center{
+        grid-area: center;
+        background: #643030;
+    }
+    .bottom{
+        grid-area: bottom;
+        background: #441818;
+    }
+    .first{
+        grid-area: first;
+        background: #937575;
+    }
+    .second{
+        grid-area:right;
+        background: #644C4C;
+    }
+    footer{
+        grid-area:footer;
+        background: #BDBDBD;
+    }
+
+</style>
+
+
+<body>
+<div class="grid">
+    <header></header>
+    <article class="top"></article>
+    <article class="center"></article>
+    <article class="bottom"></article>
+    <aside class="first"></aside>
+    <aside class="second"></aside>
+    <footer></footer>
+
+</div>
+
+</body>
+</html>
