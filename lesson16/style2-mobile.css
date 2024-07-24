@@ -1,0 +1,13 @@
+@media screen and (min-width:0px) and (max-width: 320px){
+    .grid{
+        display: grid;
+        height: 100vh;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas:
+            'header'
+            'left'
+            'right';
+
+    }
+}
