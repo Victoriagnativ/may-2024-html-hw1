@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+            'header header header header '
+            'center center center aside'
+            'one two three aside';
+
+}
+header,main,aside,article{
+    border: 1px solid;
+}
+header{
+    grid-area: header;
+    background: #D9D9D9;
+}
+main{
+    grid-area: center;
+    background: #D9D9D9;
+}
+aside{
+    grid-area: aside;
+    background: #D9D9D9;
+}
+.one{
+    grid-area: one;
+    background: #D9D9D9;
+}
+.two{
+    grid-area: two;
+    background: #D9D9D9;
+}
+.three{
+    grid-area: three;
+    background: #D9D9D9;
+}
+

@@ -1,0 +1,14 @@
+@media screen and (min-width:0px) and (max-width: 480px){
+    .grid{
+        display: grid;
+        height: 100vh;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: 1fr 2fr repeat(2,1fr);
+        grid-template-areas:
+            'header header header'
+            'center center center'
+            'one two three'
+            'aside aside aside'              ;
+
+    }
+}
